@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ol,ul{
+    list-style-type: none;
+}
+a{
+    color: #8f8f8f;
+    text-decoration: none;
+}
+a:hover{
+    color: blue;
+    text-decoration:underline;
+    font-weight: bold;
+}
+
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+
+body{
+    background-color: #e8e8e8;
+}
+/*
+#header,#push,#main,#footer{
+    height: 100px;
+    width: 100%;
+    border: 1px solid black;
+}
+*/
+.container{
+    width: 1280px;
+    margin: 0 auto;
+}
+#header{
+    width: 100%;
+    height: 80px;
+    background-color: #cecece;
+    position: fixed;
+}
+#footer{
+    height: 100px;
+}
+#push{
+    padding-top: 80px;
+    height: 150px;
+    margin:10px auto;
+}
+#push p img{
+    width: 250px;
+    height: 120px;
+    margin: 10px 35px;
+    float: left;
+}
+
+#main{
+    width: 900px;
+    height: 1100px;
+    background-color: white;
+    margin: 10px 60px 10px 150px;
+    float: left;
+}
+.main-header{
+    height: 20px;
+    padding:0 10px ;
+    position: relative;
+    font-size: 23px;
+    font-weight: bolder;
+}
+.main-header ul li{
+    float: left;
+    margin:5px 10px;
+}
+.main-content{
+    height: 910px;
+    margin: 0 20px;
+    background-color: rgba(142, 248, 189, 0.35);
+}
+.item-content{
+    height: 90px;
+    border-bottom: 1px solid rgba(164, 164, 164, 0.45);
+}
+.item-content h2{
+    height: 20px;
+}
+.item-content h2 a{
+    color: black;
+    font-weight: bolder;
+    font-size: 20px;
+}
+h2 a:hover{
+    color: blue;
+    text-decoration: underline;
+    font-weight: bold;
+}
+.item-content-word{
+    height: 40px;
+    color: #626262;
+    margin: 5px 0;
+}
+.item-content-writer a{
+    font-weight: bolder;
+    float: left;
+    color: black;
+}
+.item-content-writer a:hover{
+    color: blue;
+}
+.item-content-date{
+    font-weight: bolder;
+    float: right;
+}
+.load-more{
+    height: 50px;
+    color: #9b9b9b;
+    font-size: 40px;
+    margin: 40px;
+    text-align: center;
+    background-color: #e1e1e1;
+}
+.sidebar{
+    width: 300px;
+    height: 540px;
+    background-color: white;
+    float: left;
+    margin-top: 10px;
+}
+.sidebar h3{
+    height: 20px;
+    font-weight: bolder;
+    margin: 10px 10px;
+}
+
+.sidebar-list-content{
+    margin: 0 10px;
+    background-color: rgba(128, 215, 248, 0.35);
+}
+.sidebar-list-content li{
+    height: 48px;
+    text-align: left;
+    margin: 0 10px;
+    border-bottom: 1px solid rgba(164, 164, 164, 0.45);
+}
+.sidebar-list ul li a{
+    line-height: 48px;
+    overflow: hidden;
+}
+.change{
+    height: 40px;
+    width: 200px;
+    text-align: center;
+    margin: 10px 45px;
+    background-color: #e1e1e1;
+    font-size: 30px;
+}

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>用户登录</title>
+</head>
+<body>
+<p style="color: red" th:text="${msg}" th:if="${not #strings.isEmpty(msg)}"></p>
+<form action="/user/login" method="post">
+<!--    用户名:<input name="username" type="text" th:value="${regist.username}" th:if="${not #strings.isEmpty(regist)}"/><br>-->
+<!--    密码:<input name="password" type="password" th:value="${regist.password}" th:if="${#strings.isEmpty(regist)}"/> <br>-->
+        用户名:<input name="username" type="text"/><br>
+        密码:<input name="password" type="password"/>
+        <input type="submit" value="登录">
+    </form>
+    </body>
+    </html>
