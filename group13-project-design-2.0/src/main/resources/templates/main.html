@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>主页</title>
+</head>
+<body>
+    <div th:text="${session.user.username}"></div>
+<!--    <a methods="get" th:each="${news}" th:href="@{/news}">-->
+    <form th:action="@{/uploadVideo/}+${session.user.username}" action="/uploadVideo" method="post" enctype="multipart/form-data">
+        <p>选择文件: <input type="file" name="file"/></p>
+        <p><input type="submit" value="提交"/></p>
+    </form>
+    <a th:href="@{/getUserInfo/}+${session.user.id}">个人信息</a>
+    <a th:href="@{/news}">新闻</a>
+    <a th:href="@{/notice}">告示</a>
+    <a th:href="@{/videoList}">视频列表</a>
+</body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>平台首页</title>
+    <link rel="stylesheet" href="css/homepage.css" th:href="@{/css/homepage.css}">
+</head>
+<body>
+    <!-- <div class="background"></div> -->
+    <div class="header">
+        <div class="logo-head">
+            <a href="#"><img src="image/logo.jpg" th:src="@{/image/logo.jpg}" alt="logo-head"></a>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="#">首页</a>
+                <li><a href="index.html" th:href="@{/index.html}">新闻中心</a>
+                <li><a href="#">考研导航</a>
+                <li><a href="#">学习专栏</a>
+            </ul>
+        </div>
+        <div class="search">
+            <form>
+                <input type="text" placeholder="请输入搜索信息" name="cname">
+                <button type="submit"></button>
+            </form>
+        </div>
+
+        <div class="login">
+            <button><a href="login1.html" th:href="@{/login1.html}">登录</a></button>
+            <button><a href="register.html" th:href="@{/register.html}">注册</a></button>
+        </div>
+
+    </div>
+
+    <div class="center">
+        <div id= "parent">
+            <div id="uls">
+                <ul id="img_ul">
+                    <li><img src="image/lb2.jpg" th:src="@{/image/lb2.jpg}"/></li>
+                    <li><img src="image/lb3.jpg" th:src="@{/image/lb3.jpg}"/></li>
+                    <li><img src="image/lb4.jpg" th:src="@{/image/lb4.jpg}"/></li>
+                    <li><img src="image/lb5.jpg" th:src="@{/image/lb5.jpg}"/></li>
+                    <li><img src="image/lb1.jpg" th:src="@{/image/lb1.jpg}"/></li>
+                </ul>
+                <ul id='litCir_ul'></ul>
+            </div>
+            <div id="buttons">
+                <span id="left">&lt;</span>
+                <span id="right">&gt;</span>
+            </div>
+        </div>
+
+        <div class="categorize">
+            <div class="cate-select">
+                <ul class="cate-select-list">
+                    <li class="cate-list-item">精选推荐</li>
+                    <li class="cate-list-item">四级听力</li>
+                    <li class="cate-list-item">六级强化</li>
+                    <li class="cate-list-item">实用英语</li>
+                    <li class="cate-list-item">专业英语</li>
+                    <li class="cate-list-item">托福雅思</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="left-assembly">
+            <ul class="wrap-meeting">
+                <li class="index-meeting">
+                    <div class="img-meeting">
+                        <img src="image/jc1.jpg" th:src="@{/image/jc1.jpg}" alt="car">
+                    </div>
+                    <div class="info-meeting">
+                        <h3>英语口语课程</h3>
+                        <p class="belong-style">张三老师 cn大学外国语学院知名教授</p>
+                        <p class="time-style">2020年11月11日&nbsp;开课</p>
+                        <div class="btn-meeting">
+                            <a href="#">加入课程</a>
+                            <a href="#">课程详情</a>
+                        </div>
+                        <div class="bottom-meeting clearfix">
+                            <p>浏览次数：888&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                            <p>当前热度：888&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                            <p>课程人数：888</p>
+                        </div>
+                    </div>
+                </li>
+                
+                <li class="index-meeting">
+                    <div class="img-meeting">
+                        <img src="image/jc2.jpg" th:src="@{/image/jc2.jpg}" alt="car">
+                    </div>
+                    <div class="info-meeting">
+                        <h3>英语单词课程</h3>
+                        <p class="belong-style">李四老师 nc大学外国语学院知名教授</p>
+                        <p class="time-style">2020年11月11日&nbsp;开课</p>
+                        <div class="btn-meeting">
+                            <a href="#">加入课程</a>
+                            <a href="#">课程详情</a>
+                        </div>
+                        <div class="bottom-meeting clearfix">
+                            <p>浏览次数：666&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                            <p>当前热度：666&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                            <p>课程人数：666</p>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="index-meeting">
+                    <div class="img-meeting">
+                        <img src="image/jc3.jpg" th:src="@{/image/jc3.jpg}" alt="car">
+                    </div>
+                    <div class="info-meeting">
+                        <h3>商务英语</h3>
+                        <p class="belong-style">王五老师 著名公司ceo,精通八国语言</p>
+                        <p class="time-style">2020年11月11日&nbsp;开课</p>
+                        <div class="btn-meeting">
+                            <a href="#">加入课程</a>
+                            <a href="#">课程详情</a>
+                        </div>
+                        <div class="bottom-meeting clearfix">
+                            <p>浏览次数：999&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                            <p>当前热度：999&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                            <p>课程人数：999</p>
+                        </div>
+                    </div>
+                </li>
+                
+            </ul>
+        </div>
+
+
+    </div>
+
+    <div class="cooperation">
+        <div class="cooperation-1">
+            <h4 class="cooperation-title">合作链接</h4>
+            <ul class="cooperation-list">
+                <li>
+                    <a class="cooperation-link">四川师范大学</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+ 
+    <div class="footer">
+        <!-- <div class="logo-foot">
+            <a href="#"><img src="pic/logo.png" alt="logo-foot"></a>
+        </div> -->
+        <P>
+            四川师范大学计算机科学学院2017级4班13组 版权所有 | <a>客户服务</a> |
+        <a>帮助中心</a> | <a>联系我们</a> | <a>招聘信息</a> | <a>问题反馈</a> | <a>帮助</a>
+        </P>
+
+    </div>
+</body>
+
+<script src="js/homepage-box.js" th:src="@{/js/homepage-box.js}"></script>
+</html>

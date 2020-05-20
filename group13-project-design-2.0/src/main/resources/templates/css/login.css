@@ -1,0 +1,55 @@
+body{
+    background-color: rgb(255, 255, 255);
+}
+
+
+h2 {
+    font-family: 宋体;
+    font-size: 28px;
+    text-align: center;
+    background: #f5ecec;
+    margin-top: auto;
+    height: 30px;
+    width: 500px;
+}
+
+.box {
+    border: 1px solid #000000;
+    height: 370px;
+    width: 500px;
+    float: left;
+    margin: 50px;
+    margin-left: 30%;
+}
+
+.input_box{
+    text-align: center;
+    height: 30px;
+    width: 500px;
+
+}
+input {
+    align-self: center;
+    height: 30px;
+    width: 300px;
+}
+
+.button button{
+    font-size: 22px;
+    width: 360px;
+    height: 30px;
+    align-self: center;
+    margin-bottom: auto;
+    background: #5f5df1;
+    margin-left: 15%;
+}
+
+.other-login button{
+    font-size: 22px;
+    width: 180px;
+    height: 30px;
+    align-self: center;
+    margin-bottom: auto;
+    background: #c7c7d4;
+    margin-left: 60%;
+}

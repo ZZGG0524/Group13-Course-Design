@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>注册</title>
+    <link rel="stylesheet" href="css/register.css" th:href="@{/css/register.css}">
+</head>
+<body>
+    <div class="box">
+        <div id="tittle"><h2 align="center">注册</h2></div>
+        <p class="input_box">
+            账户： <input id="uname" type="text" placeholder="请输入您的昵称">
+        </p>
+        <p class="input_box">
+            密码： <input id="upass" type="password" placeholder="请设置您的密码">
+        </p>
+        <p class="input_box">
+           验证：  <input id="upass1" type="password" placeholder="请再次输入密码">
+        </p>
+         <p class="input_box">
+            邮箱： <input id="youxiang" type="password" placeholder="请输入您的邮箱">
+        </p>
+    
+        <div id="error_box"><br></div>
+        <div class="button"><button onclick="foLogin()">立即注册</button></div>
+        <h4 align="center"> <a href="login1.html">已有账号,请登录</a></h4>
+    
+    
+    </div>
+</body>
+<script src="js/register.js" th:src="@{/js/register.js}"></script>
+</html>

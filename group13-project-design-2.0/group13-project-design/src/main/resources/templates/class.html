@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>英语口语课程</title>
+    <link rel="stylesheet" href="css/class.css" th:href="@{/css/class.css}">
+</head>
+<body>
+    <div class="study-header">
+        <div class="introduce" title="四级精品课程">
+            英语口语课程
+        </div>
+
+        <div class="operations">
+            <div class="share">分享课程</div>
+            <div class="complaint">投诉</div>
+        </div>
+    </div>
+    
+    <div class="study-body">
+        <video th:src="@{'video/'+${title}}" type="video/mp4" autoplay="autoplay" controls="controls" loop="-1"></video>
+    </div>
+    
+    <div class=""></div>
+    
+
+
+
+
+    <div class="bottom">
+         
+    </div>
+</body>
+</html>
