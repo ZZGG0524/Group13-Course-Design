@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新闻详情</title>
+    <link rel="stylesheet" th:href="@{/css/notice_detail.css}" href="../css/notice_detail.css">
+</head>
+<body>
+<div class="main">
+    <div class="nt">
+        <div class="nt-head">
+            <a href="#">新闻通知</a>
+        </div>
+
+        <div class="detail">
+            <div class="detail-title">
+                <h1 th:text="${newsInfo.title}"> 关于开通《2021考研冲刺80+：所有题型方法考点一网打尽》课程通告</h1>
+                <div th:text="${#dates.format(newsInfo.time, 'yyyy-MM-dd HH:mm:ss')}">发布时间：2020年05月13日 18 : 49 : 24</div>
+            </div>
+            <p>
+                <br>
+            </p>
+            <p th:text="${newsInfo.context}">&nbsp;&nbsp;&nbsp;平台即将推出《2021考研冲刺80+：所有题型方法考点一网打尽》这一课程，有兴趣的同学可以提早了解和报名</p>
+
+            <P th:text="${newsInfo.user}" class="dlf">
+
+                <br>
+                2020年1月1日
+            </P>
+
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

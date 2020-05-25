@@ -1,0 +1,93 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en" xmlns:th="http://www.thymeleaf.org">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>新闻中心</title>-->
+<!--    <link rel="stylesheet" type="text/css" href="css/index.css" th:href="@{/css/index.css}">-->
+<!--</head>-->
+<!--<body>-->
+<!--    <div id="header">-->
+<!--        <div class="container">-->
+
+<!--        </div>-->
+<!--    </div>-->
+<!--&lt;!&ndash;头部&ndash;&gt;-->
+<!--    <div id="push">-->
+<!--        <div class="container">-->
+<!--            <p>-->
+<!--                <a href="#"><img src="image/push2.jpg" th:src="@{/image/push2.jpg}"></a>-->
+<!--                <a href="#"><img src="image/push3.jpg" th:src="@{/image/push3.jpg}"></a>-->
+<!--                <a href="#"><img src="image/push4.jpg" th:src="@{/image/push4.jpg}"></a>-->
+<!--                <a href="#"><img src="image/push5.jpg" th:src="@{/image/push5.jpg}"></a>-->
+<!--            </p>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--&lt;!&ndash;推送&ndash;&gt;-->
+<!--    <div id="main">-->
+<!--        <div class="main-all">-->
+<!--            <div class="main-header">-->
+<!--                <ul>-->
+<!--                    <li><a href="#">全部文章</a></li>-->
+<!--                    <li><a href="#">最新文章</a></li>-->
+<!--                    <li><a href="#">热门文章</a></li>-->
+<!--                    <li><a href="#">名师文章</a></li>-->
+<!--                </ul>-->
+<!--            </div>-->
+<!--            <br/>-->
+<!--            <div class="main-content">-->
+<!--                <ul>-->
+<!--                    <li th:each="emp:${news}" class="item">-->
+<!--                        <div class="item-content">-->
+<!--                            <h2>-->
+<!--                                <a th:text="${emp.title}" th:href="@{/news/}+${emp.id}" href="#">大学生公共英语学习平台</a>-->
+<!--                            </h2>-->
+<!--                            <div th:text="${emp.context}" class="item-content-word">-->
+<!--                                <p>快来加入我们吧！</p>-->
+<!--                            </div>-->
+<!--                            <div th:text="${emp.user}" class="item-content-writer">-->
+<!--                                <a href="#">作者：13组成员</a>-->
+<!--                            </div>-->
+<!--                            <span th:text="${#dates.format(emp.time, 'yyyy-MM-dd HH:mm')}" class="item-content-date">发布时间：2020-5-4</span>-->
+<!--                        </div>-->
+<!--                    </li>-->
+
+<!--                    <p>当前 <span th:text="${pageInfo.pageNum}"></span> 页,总 <span th:text="${pageInfo.pages}"></span> 页,共 <span th:text="${pageInfo.total}"></span> 条记录</p>-->
+<!--                    <a th:href="@{/news}">首页</a>-->
+<!--                    <a th:href="@{/news(pageNum=${pageInfo.hasPreviousPage}?${pageInfo.prePage}:1)}">上一页</a>-->
+<!--                    <a th:href="@{/news(pageNum=${pageInfo.hasNextPage}?${pageInfo.nextPage}:${pageInfo.pages})}">下一页</a>-->
+<!--                    <a th:href="@{/news(pageNum=${pageInfo.pages})}">尾页</a>-->
+<!--                </ul>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--&lt;!&ndash;文章&ndash;&gt;-->
+<!--    <div class="sidebar">-->
+<!--        <h3>推荐阅读</h3>-->
+<!--        <div class="sidebar-list">-->
+<!--            <ul class="sidebar-list-content">-->
+<!--                <li><a href="#">48个英语音标正确读法</a></li>-->
+<!--                <li><a href="#">《英语学习》英语专家如是说系列</a></li>-->
+<!--                <li><a href="#">跟英语谈恋爱</a></li>-->
+<!--                <li><a href="#">写英语作文换点儿牛词</a></li>-->
+<!--                <li><a href="#">如何利用网络进行英语学习</a></li>-->
+<!--                <li><a href="#">听歌学英语:水仙花之歌</a></li>-->
+<!--                <li><a href="#">那些给我勇气的双语美文</a></li>-->
+<!--                <li><a href="#">囧记单词:quiz 小型考试 测验</a></li>-->
+<!--                <li><a href="#">每天5分钟 看美剧不用字幕</a></li>-->
+<!--            </ul>-->
+<!--            <ul>-->
+<!--                <li class="change">-->
+<!--                    <a href="#">换一批</a>-->
+<!--                </li>-->
+<!--            </ul>-->
+<!--        </div>-->
+<!--    </div>-->
+
+<!--    <div id="footer">-->
+<!--        <div class="container">-->
+
+<!--        </div>-->
+<!--    </div>-->
+<!--&lt;!&ndash;底部&ndash;&gt;-->
+<!--</body>-->
+<!--</html>-->

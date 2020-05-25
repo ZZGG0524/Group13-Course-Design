@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=`, initial-scale=1.0">
+    <title>新闻中心</title>
+    <link rel="stylesheet" th:href="@{/css/notice.css}" href="../css/notice.css">
+</head>
+<body>
+<div class="header">
+    <div class="logo-head">
+        <a href="#"><img src="../pic/logo.jpg" th:src="@{/image/logo.jpg}" alt="logo-head"></a>
+    </div>
+    <div class="notice-1">
+        <P>新闻中心</P>
+    </div>
+</div>
+
+<div class="center">
+    <div class="nt">
+        <div class="nt-head">
+            <a href="#">新闻通知</a>
+        </div>
+
+        <ul class="new-list1">
+
+            <li th:each="emp:${news}">
+                <a href="notice_detail.html" th:href="@{/news/}+${emp.id}" th:text="${emp.title}" class="ys">
+                    <span>■</span>
+                    关于开展《2021考研冲刺80+：所有题型方法考点一网打尽》课程通告
+                </a>
+                <span th:text="${#dates.format(emp.time, 'yyyy-MM-dd')}" class="fr">2020-1-1</span>
+            </li>
+
+            <!--            <li>-->
+            <!--                <a href="#" class="ys">-->
+            <!--                 <span>■</span>-->
+            <!--                 关于开展《2021考研冲刺80+：所有题型方法考点一网打尽》课程通告-->
+            <!--                </a>-->
+            <!--                <span class="fr">2020-1-1</span>-->
+            <!--            </li>-->
+
+            <!--            <li>-->
+            <!--                <a href="#" class="ys">-->
+            <!--                 <span>■</span>-->
+            <!--                 关于开展《2021考研冲刺80+：所有题型方法考点一网打尽》课程通告-->
+            <!--                </a>-->
+            <!--                <span class="fr">2020-1-1</span>-->
+            <!--            </li>-->
+
+            <!--            <li>-->
+            <!--                <a href="#" class="ys">-->
+            <!--                 <span>■</span>-->
+            <!--                 关于开展《2021考研冲刺80+：所有题型方法考点一网打尽》课程通告-->
+            <!--                </a>-->
+            <!--                <span class="fr">2020-1-1</span>-->
+            <!--            </li>-->
+
+
+            <!--            <li>-->
+            <!--                <a href="#" class="ys">-->
+            <!--                 <span>■</span>-->
+            <!--                 关于开展《2021考研冲刺80+：所有题型方法考点一网打尽》课程通告-->
+            <!--                </a>-->
+            <!--                <span class="fr">2020-1-1</span>-->
+            <!--            </li>-->
+        </ul>
+
+
+        <div class="page">
+            <p>当前 <span th:text="${pageInfo.pageNum}"></span> 页,总 <span th:text="${pageInfo.pages}"></span> 页,共 <span th:text="${pageInfo.total}"></span> 条记录</p>
+            <a th:href="@{/news}">首页</a>
+            <a th:href="@{/news(pageNum=${pageInfo.hasPreviousPage}?${pageInfo.prePage}:1)}">上一页</a>
+            <a th:href="@{/news(pageNum=${pageInfo.hasNextPage}?${pageInfo.nextPage}:${pageInfo.pages})}">下一页</a>
+            <a th:href="@{/news(pageNum=${pageInfo.pages})}">尾页</a>
+        </div>
+    </div>
+
+
+</div>
+
+
+</body>
+</html>

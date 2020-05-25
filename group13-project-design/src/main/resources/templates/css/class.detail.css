@@ -1,0 +1,92 @@
+body{
+    font: 14px/1.5 "微软雅黑";
+    color: #333;
+}
+
+
+.main {
+    margin: 0 auto 46px;
+    min-height: 800px;
+    width: 1170px;
+    position: relative;
+
+}
+
+
+.nt {
+    width: 910px;
+    color: #333;
+    float: right;
+    display: inline;
+}
+
+.nt-head {
+    line-height: 34px;
+    margin: 30px 0 10px;
+    padding: 0 5px 5px;
+    border-bottom: 1px solid #ddd;
+    color: #555;
+}
+
+.nt-head a{
+    color: #555;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.detail {
+    line-height: 27px;
+    font-size: 17px;
+    color: #666;
+}
+
+.detail-title {
+    padding: 0 30px;
+    border-bottom: 1px dotted #d1d1d1;
+    text-align: center;
+}
+
+.detail-title h1{
+    line-height: 35px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+
+.detail-title div {
+    padding: 8px 0;
+    font-size: 15px;
+    word-break: keep-all;
+}
+
+.detail p{
+    line-height: 30px;
+    margin-bottom: 10px;
+}
+
+.nt-head1 {
+    line-height: 34px;
+    margin: 30px 0 10px;
+    padding: 0 5px 5px;
+    border-bottom: 1px solid #ddd;
+    color: #555;
+}
+
+.nt-head1 a{
+    color: #555;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.detail p{
+    line-height: 30px;
+    margin-bottom: 10px;
+}
+
+.fl{
+    float: left;
+    font-style: oblique;
+    color: red;
+}

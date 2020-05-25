@@ -1,0 +1,37 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en" xmlns:th="http://www.thymeleaf.org">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Title</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--    <table>-->
+<!--        <thead>-->
+<!--        <tr>-->
+<!--            <th>id</th>-->
+<!--            <th>title</th>-->
+<!--            <th>path</th>-->
+<!--            <th>time</th>-->
+<!--        </tr>-->
+<!--        </thead>-->
+<!--        <tbody>-->
+<!--        <tr th:each="emp:${video}">-->
+<!--            <td th:text="${emp.id}"></td>-->
+<!--            <td th:text="${emp.title}"></td>-->
+<!--            <td th:text="${emp.path}"></td>-->
+<!--            <td th:text="${#dates.format(emp.time, 'yyyy-MM-dd HH:mm:ss')}"></td>-->
+<!--&lt;!&ndash;            <td th:text="${emp.time}"></td>&ndash;&gt;-->
+<!--            <td>-->
+<!--                <a th:href="@{/videoPlay/}+${emp.id}">播放</a>-->
+<!--                <button th:attr="del_uri=@{/videoPlay/}+${emp.id}">删除</button>-->
+<!--            </td>-->
+<!--        </tr>-->
+<!--        </tbody>-->
+<!--    </table>-->
+<!--    <p>当前 <span th:text="${pageInfo.pageNum}"></span> 页,总 <span th:text="${pageInfo.pages}"></span> 页,共 <span th:text="${pageInfo.total}"></span> 条记录</p>-->
+<!--    <a th:href="@{/videoList}">首页</a>-->
+<!--    <a th:href="@{/videoList(pageNum=${pageInfo.hasPreviousPage}?${pageInfo.prePage}:1)}">上一页</a>-->
+<!--    <a th:href="@{/videoList(pageNum=${pageInfo.hasNextPage}?${pageInfo.nextPage}:${pageInfo.pages})}">下一页</a>-->
+<!--    <a th:href="@{/videoList(pageNum=${pageInfo.pages})}">尾页</a>-->
+<!--</body>-->
+<!--</html>-->

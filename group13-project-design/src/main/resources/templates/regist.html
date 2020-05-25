@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>用户注册</title>
+</head>
+<body onload="submit_mail_init()">
+<p style="color: red" th:text="${msg}" th:if="${not #strings.isEmpty(msg)}"></p>
+<form action="/user/regist" method="post">
+    用户名:<input name="username" type="text"/><br>
+    密码:<input name="password" type="password"> <br>
+    身份:<select name="perms">
+            <option>student</option>
+            <option>teacher</option>
+        </select>
+    邮箱:<input id="email" name="mail" type="email">
+    <input type="submit" value="注册">
+</form>
+<!--邮箱:<input name="mail" type="email"> &nbsp; <a th:href="@{/sendMail}">发送验证码</a> <br>-->
+</body>
+<!--<script>-->
+<!--    var submit_mail = null;-->
+
+<!--    function submit_mail_init() {-->
+<!--        submit_mail = GetXMlHttpRequest();-->
+<!--        if(submit_mail) {-->
+<!--            submit_mail.onreadystatechange = user_mail_response;-->
+<!--        }else {-->
+<!--            alert("你的浏览器不支持AJAX，推荐使用firefoxs或者chrome浏览器");-->
+<!--        }-->
+<!--    }-->
+
+<!--    function submitMail() {-->
+<!--        if(submit_mail) {-->
+<!--            var mail = $("#email").val();-->
+<!--            if(mail == "") {-->
+<!--                alert("内容为空");-->
+<!--            }else {-->
+<!--                submit_mail.open('post','/sendMail',true);-->
+<!--                submit_mail.setRequestHeader('content-type','application/x-www-form-urlencoded');-->
+<!--                submit_mail.send('mail='+mail);-->
+<!--            }-->
+<!--        }-->
+<!--    }-->
+
+<!--    function user_mail_response() {-->
+<!--        if(submit_mail.readyState == 4) {-->
+<!--            if(submit_mail.status == 200) {-->
+<!--                alert("发送成功")-->
+<!--                // cleartextarea();-->
+<!--                // window.location.href='index.jsp';-->
+<!--            }-->
+<!--        }-->
+<!--    }-->
+<!--</script>-->
+</html>

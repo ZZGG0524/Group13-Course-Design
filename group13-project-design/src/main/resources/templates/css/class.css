@@ -1,0 +1,127 @@
+
+
+
+/********study—header ********/
+
+.study-header {
+    width: 100%;
+    height: 60px;
+    color: #aaa;
+    background: #1d1d1d;
+    user-select: none;
+    position: relative;
+    z-index: 3000;
+}
+
+.introduce {
+    font-size: 16px;
+    line-height: 60px;
+    margin-left: 20px;
+    max-width: 400px;
+    text-align: left;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    box-sizing: border-box;
+}
+
+.operations {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    font-size: 14px;
+    line-height: 30px;
+}
+
+.share {
+    padding: 15px;
+    position: relative;
+    cursor: pointer;
+    z-index: 2;
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.complaint {
+    padding: 15px;
+    position: relative;
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    text-align: center;
+}
+
+
+/******study-body********/
+
+video{
+    border: 1px solid #000;
+      width: 100%;
+}
+.study-body {
+    width: 100%;
+    margin: 0 auto;
+    text-align: left;
+
+}
+
+.m-upload {
+    height: 50px;
+
+}
+
+.h-upload {
+    margin-top: 5px;
+}
+
+.download {
+    width: 300px;
+    position: relative;
+    
+}
+
+
+.download a{
+    text-decoration: none;
+
+}
+
+
+
+
+
+
+/******bottom*******/
+.bottom {
+    width: 100%;
+    display: block;
+    padding-top: 40px;
+    height: 180px;
+    box-sizing: border-box;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    background: #6c6d6e;
+    font-size: 22px;
+    
+
+}
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.logo-foot {
+    width: 120px;
+}
+
+.logo-foot img {
+    width: 100%;
+} 

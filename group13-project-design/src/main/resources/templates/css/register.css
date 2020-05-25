@@ -1,0 +1,72 @@
+body{
+    background-color: rgb(255, 255, 255);
+}
+
+
+h2 {
+    font-family: 宋体;
+    font-size: 28px;
+    text-align: center;
+    background: #444;
+    margin-top: auto;
+    height: 30px;
+    width: 500px;
+}
+
+.line {
+    height: 2px;
+    background: red;
+    margin: 8px 0;
+}
+.box {
+    border: 1px solid #000000;
+    height: 370px;
+    width: 500px;
+    float: left;
+    margin: 50px;
+    margin-left: 30%;
+    background:  #444;
+    color: white
+}
+
+
+.input_box{
+    text-align: center;
+    height: 30px;
+    width: 500px;
+
+}
+input {
+    align-self: center;
+    height: 30px;
+    width: 300px;
+}
+
+.register_submit {
+    margin-left: 15%;
+    align-self: center;
+}
+
+.submit {
+    border: none;
+    width: 240px;
+    height: 45px;
+    margin-left: 55px;
+    background: #824be9;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+
+.login-a {
+    margin-top: 5px;
+    text-align: center;
+}
+
+.login-a a{
+    color: white;
+}

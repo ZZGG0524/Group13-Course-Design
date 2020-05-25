@@ -1,0 +1,39 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en" xmlns:th="http://www.thymeleaf.org">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Title</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--<table>-->
+<!--    <thead>-->
+<!--    <tr>-->
+<!--        <th>id</th>-->
+<!--        <th>title</th>-->
+<!--        <th>context</th>-->
+<!--        <th>time</th>-->
+<!--        <th>user</th>-->
+<!--    </tr>-->
+<!--    </thead>-->
+<!--    <tbody>-->
+<!--    <tr th:each="emp:${notice}">-->
+<!--        <td th:text="${emp.id}"></td>-->
+<!--        <td th:text="${emp.title}"></td>-->
+<!--        <td th:text="${emp.context}"></td>-->
+<!--        <td th:text="${emp.user}"></td>-->
+<!--        <td th:text="${#dates.format(emp.time, 'yyyy-MM-dd HH:mm')}"></td>-->
+<!--        <td>-->
+<!--            <a th:href="@{/notice/}+${emp.id}">编辑</a>-->
+<!--            <button th:attr="del_uri=@{/notice/}+${emp.id}">删除</button>-->
+<!--        </td>-->
+<!--    </tr>-->
+<!--    </tbody>-->
+<!--</table>-->
+<!--<p>当前 <span th:text="${pageInfo.pageNum}"></span> 页,总 <span th:text="${pageInfo.pages}"></span> 页,共 <span th:text="${pageInfo.total}"></span> 条记录</p>-->
+<!--<a th:href="@{/notice}">首页</a>-->
+<!--<a th:href="@{/notice(pageNum=${pageInfo.hasPreviousPage}?${pageInfo.prePage}:1)}">上一页</a>-->
+<!--<a th:href="@{/notice(pageNum=${pageInfo.hasNextPage}?${pageInfo.nextPage}:${pageInfo.pages})}">下一页</a>-->
+<!--<a th:href="@{/notice(pageNum=${pageInfo.pages})}">尾页</a>-->
+
+<!--</body>-->
+<!--</html>-->

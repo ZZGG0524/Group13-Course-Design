@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <table>
+        <thead>
+        <tr>
+            <th>id</th>
+            <th>username</th>
+            <th>email</th>
+            <th>perms</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td th:text="${userInfo.id}"></td>
+            <td th:text="${userInfo.username}"></td>
+            <td th:text="${userInfo.email}"></td>
+            <td th:text="${userInfo.perms}"></td>
+<!--            <td th:text="${#dates.format(userInfo., 'yyyy-MM-dd HH:mm')}"></td>-->
+            <td>
+                <a th:href="@{/user/}+${userInfo.id}">编辑</a>
+                <button th:attr="del_uri=@{/deleteUser/}+${userInfo.id}">删除</button>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en" xmlns:th="http://www.thymeleaf.org">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>新闻中心</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--    <div th:text="${session.user.username}"></div>-->
+<!--    <table>-->
+<!--        <thead>-->
+<!--            <tr>-->
+<!--                <th>id</th>-->
+<!--                <th>title</th>-->
+<!--                <th>context</th>-->
+<!--                <th>time</th>-->
+<!--                <th>user</th>-->
+<!--            </tr>-->
+<!--        </thead>-->
+<!--&lt;!&ndash;        <tbody>&ndash;&gt;-->
+<!--&lt;!&ndash;            <tr th:each="emp:${news}">&ndash;&gt;-->
+<!--&lt;!&ndash;                <td th:text="${emp.id}"></td>&ndash;&gt;-->
+<!--&lt;!&ndash;                <td th:text="${emp.title}"></td>&ndash;&gt;-->
+<!--&lt;!&ndash;                <td th:text="${emp.context}"></td>&ndash;&gt;-->
+<!--&lt;!&ndash;                <td th:text="${emp.user}"></td>&ndash;&gt;-->
+<!--&lt;!&ndash;                <td th:text="${#dates.format(emp.time, 'yyyy-MM-dd HH:mm')}"></td>&ndash;&gt;-->
+<!--&lt;!&ndash;                <td>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <a th:href="@{/news/}+${emp.id}">编辑</a>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <button th:attr="del_uri=@{/deleteNews/}+${emp.id}">删除</button>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <a th:href="@{/deleteNews/}+${emp.id}">删除</a>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <a th:attr="del_uri=@{/deleteNews/}+${emp.id}">删除</a>&ndash;&gt;-->
+<!--&lt;!&ndash;                </td>&ndash;&gt;-->
+<!--&lt;!&ndash;            </tr>&ndash;&gt;-->
+<!--&lt;!&ndash;        </tbody>&ndash;&gt;-->
+<!--        <tbody>-->
+<!--        <tr th:each="emp:${news}">-->
+<!--            <td th:text="${emp.id}"></td>-->
+<!--            <td th:text="${emp.title}"></td>-->
+<!--            <td th:text="${emp.context}"></td>-->
+<!--            <td th:text="${emp.user}"></td>-->
+<!--            <td th:text="${#dates.format(emp.time, 'yyyy-MM-dd HH:mm')}"></td>-->
+<!--            <td>-->
+<!--                <a th:href="@{/news/}+${emp.id}">编辑</a>-->
+<!--                <button th:attr="del_uri=@{/deleteNews/}+${emp.id}">删除</button>-->
+<!--                <a th:href="@{/deleteNews/}+${emp.id}">删除</a>-->
+<!--                <a th:attr="del_uri=@{/deleteNews/}+${emp.id}">删除</a>-->
+<!--            </td>-->
+<!--        </tr>-->
+<!--        </tbody>-->
+<!--    </table>-->
+<!--    <p>当前 <span th:text="${pageInfo.pageNum}"></span> 页,总 <span th:text="${pageInfo.pages}"></span> 页,共 <span th:text="${pageInfo.total}"></span> 条记录</p>-->
+<!--    <a th:href="@{/news}">首页</a>-->
+<!--    <a th:href="@{/news(pageNum=${pageInfo.hasPreviousPage}?${pageInfo.prePage}:1)}">上一页</a>-->
+<!--    <a th:href="@{/news(pageNum=${pageInfo.hasNextPage}?${pageInfo.nextPage}:${pageInfo.pages})}">下一页</a>-->
+<!--    <a th:href="@{/news(pageNum=${pageInfo.pages})}">尾页</a>-->
+<!--&lt;!&ndash;    <a th:href="@{/main.html}">回到首页</a>&ndash;&gt;-->
+
+<!--</body>-->
+<!--</html>-->
